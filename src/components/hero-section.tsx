@@ -1,21 +1,55 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
-import { Linkedin, Github, Mail, Phone } from 'lucide-react';
+import { Linkedin, Github, Mail, Phone, Upload } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useState, useRef } from 'react';
 
 export function HeroSection() {
+  const [imageSrc, setImageSrc] = useState('https://picsum.photos/400/400');
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
+  const handleImageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        if (e.target?.result) {
+          setImageSrc(e.target.result as string);
+        }
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
+  const handleUploadClick = () => {
+    fileInputRef.current?.click();
+  };
+
   return (
     <section className="py-12 md:py-24 lg:py-32">
       <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
-        <div className="flex justify-center">
+        <div className="flex flex-col items-center gap-4">
           <Image
-            src="https://picsum.photos/400/400"
+            src={imageSrc}
             alt="User Photograph"
             width={400}
             height={400}
             className="rounded-full object-cover w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 border-4 border-primary shadow-lg"
             data-ai-hint="professional portrait"
           />
+          <input
+            type="file"
+            ref={fileInputRef}
+            onChange={handleImageChange}
+            className="hidden"
+            accept="image/*"
+          />
+          <Button onClick={handleUploadClick} variant="outline">
+            <Upload className="mr-2 h-4 w-4" />
+            Change Photo
+          </Button>
         </div>
         <div className="space-y-4 text-center md:text-left">
           <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter">
