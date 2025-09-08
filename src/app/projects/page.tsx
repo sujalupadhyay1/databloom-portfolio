@@ -47,11 +47,11 @@ const projects = [
   },
   {
     title: 'IMDB Movie Analysis',
-    description: 'Analyzed logistics data to identify inefficiencies in the supply chain, recommending route optimizations that cut transportation costs by 10%.',
+    description: 'This analysis highlights the complex relationship between budget, revenue, ratings, and genres.',
     imageUrl: 'https://picsum.photos/600/400?random=6',
-    tags: ['SQL', 'Logistics', 'Optimization'],
+    tags: ['python', 'Jupyter Notebook', 'Matplotlib/Seaborn'],
     aiHint: 'supply chain',
-    githubUrl: 'https://github.com/sujalupadhyay1',
+    githubUrl: 'https://github.com/sujalupadhyay1/IMDB-Movie-Analysis',
   },
   {
     title: 'Financial Fraud Detection',
