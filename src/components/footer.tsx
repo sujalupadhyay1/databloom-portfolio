@@ -14,21 +14,21 @@ export function Footer() {
             <Linkedin className="h-6 w-6" />
           </Link>
           <Link
-            href="#"
+            href="https://github.com/sujalupadhyay1"
             aria-label="GitHub"
             className="text-muted-foreground hover:text-foreground transition-colors"
           >
             <Github className="h-6 w-6" />
           </Link>
           <Link
-            href="mailto:example@gmail.com"
+            href="mailto:sujalupadhyay13@gmail.com"
             aria-label="Email"
             className="text-muted-foreground hover:text-foreground transition-colors"
           >
             <Mail className="h-6 w-6" />
           </Link>
            <Link
-            href="tel:+1234567890"
+            href="tel:+917357135213"
             aria-label="Phone"
             className="text-muted-foreground hover:text-foreground transition-colors"
           >
