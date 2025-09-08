@@ -41,7 +41,7 @@ const projects = [
     title: 'SQL SALES ANALYTICS EDA',
     description: 'Performed sentiment analysis on Twitter data to gauge public opinion on a new product launch, providing actionable feedback to the marketing team.',
     imageUrl: 'https://picsum.photos/600/400?random=5',
-    tags: ['SQL', 'Social Media'],
+    tags: ['SQL', 'Sales Analysis'],
     aiHint: 'social media',
     githubUrl: 'https://github.com/sujalupadhyay1',
   },
