@@ -3,8 +3,8 @@ import { Briefcase } from 'lucide-react';
 
 const experiences = [
   {
-    role: 'Data Analyst Intern',
-    company: 'Tech Solutions Inc.',
+    role: 'IT development',
+    company: 'Basket hunt',
     period: 'May 2024 – Jul 2024',
     tasks: [
       'Managed company databases and created dashboards & reports for client operations.',
