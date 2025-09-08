@@ -14,7 +14,7 @@ const projects = [
     githubUrl: 'https://github.com/sujalupadhyay1/Weather-Data-Analysis-Dashboard-Power-BI',
   },
   {
-    title: 'Customer Segmentation Analysis',
+    title: 'ITC Hotels Customer Sales Analytics',
     description: 'Utilized k-means clustering to segment customers based on purchasing behavior, enabling targeted marketing campaigns that increased conversion rates by 20%.',
     imageUrl: 'https://picsum.photos/600/400?random=2',
     tags: ['R', 'Clustering', 'Marketing'],
