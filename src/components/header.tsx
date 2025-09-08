@@ -7,7 +7,7 @@ export function Header() {
       <Link href="/" className="flex items-center justify-center" prefetch={false}>
         <MountainIcon className="h-6 w-6 text-primary" />
         <span className="sr-only">DataBloom Portfolio</span>
-        <span className="ml-2 text-xl font-headline font-bold">DataBloom</span>
+        <span className="ml-2 text-xl font-headline font-bold">Heyy,sup?</span>
       </Link>
       <nav className="ml-auto flex gap-4 sm:gap-6">
         <Link
