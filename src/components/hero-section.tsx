@@ -11,7 +11,7 @@ export function HeroSection() {
       <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
         <div className="flex flex-col items-center gap-4">
           <Image
-            src="/sujal.jpeg"
+            src="/IMG_8190(1.jpg)"
             alt="User Photograph"
             width={400}
             height={400}
