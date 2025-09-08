@@ -4,7 +4,7 @@ import { Badge } from '@/components/ui/badge';
 
 const projects = [
   {
-    title: 'Retail Sales Forecasting',
+    title: 'Weather Data Analysis Dashboard',
     description: 'Developed a time-series model to predict weekly sales for a major retail chain, improving inventory management and reducing stockouts by 15%.',
     imageUrl: 'https://picsum.photos/600/400?random=1',
     tags: ['Python', 'Time Series', 'Forecasting'],
