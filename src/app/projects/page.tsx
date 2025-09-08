@@ -8,7 +8,7 @@ const projects = [
   {
     title: 'Weather Data Analysis Dashboard',
     description: 'Weather Report is a Power BI solution that connects to a live weather API, processes raw JSON data, and delivers an interactive dashboard for current conditions, hourly forecasts, and daily forecasts. The project showcases ETL with Power Query (M), data modeling, and DAX measures to produce actionable insights for multiple cities.',
-    imageUrl: 'https://picsum.photos/600/400?random=1',
+    imageUrl: '/weather_dashborad.png',
     tags: ['Power BI', 'DAX', 'API'],
     aiHint: 'weather dashboard',
     githubUrl: 'https://github.com/sujalupadhyay1/Weather-Data-Analysis-Dashboard-Power-BI',
