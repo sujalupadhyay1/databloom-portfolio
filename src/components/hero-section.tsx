@@ -19,7 +19,7 @@ export function HeroSection() {
         </div>
         <div className="space-y-4 text-center md:text-left">
           <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter">
-            DataBloom Portfolio
+            Sujal Upadhyay
           </h1>
           <p className="text-muted-foreground md:text-xl">
             Welcome to my portfolio. I'm a passionate data analyst dedicated to uncovering insights and telling stories with data.
