@@ -31,7 +31,7 @@ const projects = [
   },
   {
     title: "McDonald's Sales Dashboard",
-    description: "McDonald's Sales Dashboard , A dynamic and interactive Excel dashboard built to analyze McDonald’s sales performance. The project covers key business metrics such as total revenue, daily orders, and item-wise sales trends. It provides insights into peak sales periods, customer preferences, and top-performing menu items, helping identify opportunities for upselling and demand forecasting.",
+    description: "McDonald's Sales Dashboard , Built an interactive Excel dashboard to track revenue, daily orders, and item-wise trends, providing insights into peak sales, customer preferences, and top-performing items for better decision-making.",
     imageUrl: 'https://picsum.photos/600/400?random=4',
     tags: ['Excel', 'Figma', 'Sales Analysis'],
     aiHint: 'online shopping',
