@@ -10,7 +10,7 @@ export default function Home() {
       <HeroSection />
       <Separator className="my-12 md:my-24" />
       <SkillsSection />
-      <Separator className="my-12 md:my-24" />
+      <Separator className="my-12" />
       <WorkExperienceSection />
       <Separator className="my-12 md:my-24" />
       <AiEnhancerSection />
