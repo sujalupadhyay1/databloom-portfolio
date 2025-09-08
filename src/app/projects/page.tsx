@@ -35,7 +35,7 @@ const projects = [
     imageUrl: 'https://picsum.photos/600/400?random=4',
     tags: ['Python', 'Machine Learning', 'E-commerce'],
     aiHint: 'online shopping',
-    githubUrl: 'https://github.com/sujalupadhyay1',
+    githubUrl: 'https://github.com/sujalupadhyay1/McDonald-s-Sales-Dashboard-Excel',
   },
   {
     title: 'Social Media Sentiment Analysis',
