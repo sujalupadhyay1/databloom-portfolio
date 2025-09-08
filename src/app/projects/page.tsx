@@ -16,7 +16,7 @@ const projects = [
   {
     title: 'ITC Hotels Customer Sales Analytics',
     description: 'ITC made ₹2.0B in 3 months; Mumbai & Elite rooms drive revenue, occupancy ~43.5%, cancellations high (24.8%, ~₹299M lost) focus on premium upsells, targeted promos for weak markets and stricter cancellation/advance-pay rules.',
-    imageUrl: '/ITC.JPG',
+    imageUrl: '/ITC_HOTEL.png',
     tags: ['SQL', 'Power BI', 'Figma'],
     aiHint: 'customer segments',
     githubUrl: 'https://github.com/sujalupadhyay1/ITC-Hotels-Customer-Sales-Analytics-Power-BI-SQL-',
