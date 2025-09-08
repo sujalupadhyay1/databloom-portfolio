@@ -43,7 +43,7 @@ const projects = [
     imageUrl: 'https://picsum.photos/600/400?random=5',
     tags: ['SQL', 'Sales Analysis'],
     aiHint: 'social media',
-    githubUrl: 'https://github.com/sujalupadhyay1',
+    githubUrl: 'https://github.com/sujalupadhyay1/Sales-Analytics---EDA-',
   },
   {
     title: 'Supply Chain Optimization',
