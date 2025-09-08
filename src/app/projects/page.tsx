@@ -53,22 +53,6 @@ const projects = [
     aiHint: 'movie poster',
     githubUrl: 'https://github.com/sujalupadhyay1/IMDB-Movie-Analysis',
   },
-  {
-    title: 'Financial Fraud Detection',
-    description: 'Trained a classification model to detect fraudulent transactions with 98% accuracy, saving the company from potential financial losses.',
-    imageUrl: 'https://picsum.photos/600/400?random=7',
-    tags: ['Machine Learning', 'Finance', 'Security'],
-    aiHint: 'financial chart',
-    githubUrl: 'https://github.com/sujalupadhyay1',
-  },
-  {
-    title: 'A/B Testing Platform Analysis',
-    description: 'Conducted statistical analysis of A/B test results to determine the impact of website changes on user engagement, leading to a 5% uplift in sign-ups.',
-    imageUrl: 'https://picsum.photos/600/400?random=8',
-    tags: ['Statistics', 'A/B Testing', 'Web Analytics'],
-    aiHint: 'website analytics',
-    githubUrl: 'https://github.com/sujalupadhyay1',
-  },
 ];
 
 export default function ProjectsPage() {
