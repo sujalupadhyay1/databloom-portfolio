@@ -7,10 +7,10 @@ import { Github } from 'lucide-react';
 const projects = [
   {
     title: 'Weather Data Analysis Dashboard',
-    description: 'Developed a time-series model to predict weekly sales for a major retail chain, improving inventory management and reducing stockouts by 15%.',
+    description: 'Weather Report is a Power BI solution that connects to a live weather API, processes raw JSON data, and delivers an interactive dashboard for current conditions, hourly forecasts, and daily forecasts. The project showcases ETL with Power Query (M), data modeling, and DAX measures to produce actionable insights for multiple cities.',
     imageUrl: 'https://picsum.photos/600/400?random=1',
-    tags: ['Python', 'Time Series', 'Forecasting'],
-    aiHint: 'sales chart',
+    tags: ['Power BI', 'DAX', 'API'],
+    aiHint: 'weather dashboard',
     githubUrl: 'https://github.com/sujalupadhyay1',
   },
   {
