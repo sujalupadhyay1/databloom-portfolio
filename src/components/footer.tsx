@@ -7,7 +7,7 @@ export function Footer() {
       <div className="container mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between">
         <div className="flex gap-4 mb-4 md:mb-0">
           <Link
-            href="#"
+            href="https://www.linkedin.com/in/sujal-upadhyay-652876251/"
             aria-label="LinkedIn"
             className="text-muted-foreground hover:text-foreground transition-colors"
           >

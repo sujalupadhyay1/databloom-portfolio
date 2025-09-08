@@ -25,7 +25,7 @@ export function HeroSection() {
             Welcome to my portfolio. I'm a passionate data analyst dedicated to uncovering insights and telling stories with data.
           </p>
           <div className="flex justify-center md:justify-start gap-4 py-4">
-            <Link href="#" aria-label="LinkedIn" className="text-foreground hover:text-primary transition-colors">
+            <Link href="https://www.linkedin.com/in/sujal-upadhyay-652876251/" aria-label="LinkedIn" className="text-foreground hover:text-primary transition-colors">
               <Linkedin className="h-7 w-7" />
             </Link>
             <Link href="#" aria-label="GitHub" className="text-foreground hover:text-primary transition-colors">
