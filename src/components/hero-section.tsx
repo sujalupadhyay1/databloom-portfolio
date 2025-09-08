@@ -11,7 +11,7 @@ export function HeroSection() {
       <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
         <div className="flex flex-col items-center gap-4">
           <Image
-            src="https://picsum.photos/400/400"
+            src="https://firebasestudio-hosting.web.app/images/sujal/sujal.jpeg"
             alt="User Photograph"
             width={400}
             height={400}
