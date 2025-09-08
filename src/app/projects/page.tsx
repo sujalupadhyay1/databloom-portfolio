@@ -23,9 +23,9 @@ const projects = [
   },
   {
     title: 'HR Dashboard',
-    description: 'Designed and built an interactive Tableau dashboard to monitor patient readmission rates, helping hospital administrators identify key drivers and implement preventative measures.',
+    description: 'An interactive dashboard providing insights into workforce trends, demographics, and salary analysis. It highlights hiring vs terminations over time, workforce distribution by department.',
     imageUrl: 'https://picsum.photos/600/400?random=3',
-    tags: ['Tableau', 'Healthcare', 'Dashboard'],
+    tags: ['Tableau', 'Draw.io'],
     aiHint: 'medical dashboard',
     githubUrl: 'https://github.com/sujalupadhyay1',
   },
