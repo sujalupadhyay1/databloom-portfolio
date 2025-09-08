@@ -19,7 +19,7 @@ const projects = [
     imageUrl: 'https://picsum.photos/600/400?random=2',
     tags: ['SQL', 'Power BI', 'Figma'],
     aiHint: 'customer segments',
-    githubUrl: 'https://github.com/sujalupadhyay1',
+    githubUrl: 'https://github.com/sujalupadhyay1/ITC-Hotels-Customer-Sales-Analytics-Power-BI-SQL-',
   },
   {
     title: 'Healthcare Readmission Dashboard',
