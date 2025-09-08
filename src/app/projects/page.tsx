@@ -11,7 +11,7 @@ const projects = [
     imageUrl: 'https://picsum.photos/600/400?random=1',
     tags: ['Power BI', 'DAX', 'API'],
     aiHint: 'weather dashboard',
-    githubUrl: 'https://github.com/sujalupadhyay1',
+    githubUrl: 'https://github.com/sujalupadhyay1/Weather-Data-Analysis-Dashboard-Power-BI',
   },
   {
     title: 'Customer Segmentation Analysis',
