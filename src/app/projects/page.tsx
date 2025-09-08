@@ -27,7 +27,7 @@ const projects = [
     imageUrl: 'https://picsum.photos/600/400?random=3',
     tags: ['Tableau', 'Draw.io'],
     aiHint: 'medical dashboard',
-    githubUrl: 'https://github.com/sujalupadhyay1',
+    githubUrl: 'https://github.com/sujalupadhyay1/HR-Dashboard',
   },
   {
     title: 'E-commerce Recommendation Engine',
