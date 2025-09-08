@@ -30,13 +30,13 @@ export function HeroSection() {
             <Link href="https://www.linkedin.com/in/sujal-upadhyay-652876251/" aria-label="LinkedIn" className="text-foreground hover:text-primary transition-colors">
               <Linkedin className="h-7 w-7" />
             </Link>
-            <Link href="#" aria-label="GitHub" className="text-foreground hover:text-primary transition-colors">
+            <Link href="https://github.com/sujalupadhyay1" aria-label="https://github.com/sujalupadhyay1" className="text-foreground hover:text-primary transition-colors">
               <Github className="h-7 w-7" />
             </Link>
-            <Link href="mailto:example@gmail.com" aria-label="Email" className="text-foreground hover:text-primary transition-colors">
+            <Link href="mailto:sujalupadhyay13@gmail.com" aria-label="Email" className="text-foreground hover:text-primary transition-colors">
               <Mail className="h-7 w-7" />
             </Link>
-            <Link href="tel:+1234567890" aria-label="Phone" className="text-foreground hover:text-primary transition-colors">
+            <Link href="tel:+91 7357135213" aria-label="Phone" className="text-foreground hover:text-primary transition-colors">
               <Phone className="h-7 w-7" />
             </Link>
           </div>
