@@ -24,9 +24,9 @@ const projects = [
   {
     title: 'HR Dashboard',
     description: 'An interactive dashboard providing insights into workforce trends, demographics, and salary analysis. It highlights hiring vs terminations over time, workforce distribution by department.',
-    imageUrl: 'https://picsum.photos/600/400?random=3',
+    imageUrl: '/Dashborad.png',
     tags: ['Tableau', 'Draw.io'],
-    aiHint: 'medical dashboard',
+    aiHint: 'HR dashboard',
     githubUrl: 'https://github.com/sujalupadhyay1/HR-Dashboard',
   },
   {
