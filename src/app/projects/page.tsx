@@ -48,9 +48,9 @@ const projects = [
   {
     title: 'IMDB Movie Analysis',
     description: 'This analysis highlights the complex relationship between budget, revenue, ratings, and genres.',
-    imageUrl: 'https://picsum.photos/600/400?random=6',
+    imageUrl: '/IMDB.png',
     tags: ['python', 'Jupyter Notebook', 'Matplotlib/Seaborn'],
-    aiHint: 'supply chain',
+    aiHint: 'movie poster',
     githubUrl: 'https://github.com/sujalupadhyay1/IMDB-Movie-Analysis',
   },
   {
