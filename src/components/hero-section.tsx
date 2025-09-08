@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 
 export function HeroSection() {
   return (
-    <section className="py-12 md:py-24 lg:py-32">
+    <section className="py-8 md:py-16">
       <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
         <div className="flex flex-col items-center gap-4">
           <Image
@@ -36,7 +36,7 @@ export function HeroSection() {
             <Link href="mailto:sujalupadhyay13@gmail.com" aria-label="Email" className="text-foreground hover:text-primary transition-colors">
               <Mail className="h-7 w-7" />
             </Link>
-            <Link href="tel:+91 7357135213" aria-label="Phone" className="text-foreground hover:text-primary transition-colors">
+            <Link href="tel:+917357135213" aria-label="Phone" className="text-foreground hover:text-primary transition-colors">
               <Phone className="h-7 w-7" />
             </Link>
           </div>

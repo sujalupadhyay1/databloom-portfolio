@@ -36,7 +36,7 @@ const skills = [
 
 export function SkillsSection() {
   return (
-    <section id="skills" className="py-12 md:py-24">
+    <section id="skills" className="py-8 md:py-16">
       <div className="space-y-4 text-center">
         <h2 className="text-3xl md:text-4xl font-headline font-bold">Skills Showcase</h2>
         <p className="text-muted-foreground md:text-lg">A glimpse into my technical and analytical capabilities.</p>
