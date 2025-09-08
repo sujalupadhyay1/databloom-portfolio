@@ -1,6 +1,8 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { Github } from 'lucide-react';
 
 const projects = [
   {
@@ -9,6 +11,7 @@ const projects = [
     imageUrl: 'https://picsum.photos/600/400?random=1',
     tags: ['Python', 'Time Series', 'Forecasting'],
     aiHint: 'sales chart',
+    githubUrl: 'https://github.com/sujalupadhyay1',
   },
   {
     title: 'Customer Segmentation Analysis',
@@ -16,6 +19,7 @@ const projects = [
     imageUrl: 'https://picsum.photos/600/400?random=2',
     tags: ['R', 'Clustering', 'Marketing'],
     aiHint: 'customer segments',
+    githubUrl: 'https://github.com/sujalupadhyay1',
   },
   {
     title: 'Healthcare Readmission Dashboard',
@@ -23,6 +27,7 @@ const projects = [
     imageUrl: 'https://picsum.photos/600/400?random=3',
     tags: ['Tableau', 'Healthcare', 'Dashboard'],
     aiHint: 'medical dashboard',
+    githubUrl: 'https://github.com/sujalupadhyay1',
   },
   {
     title: 'E-commerce Recommendation Engine',
@@ -30,6 +35,7 @@ const projects = [
     imageUrl: 'https://picsum.photos/600/400?random=4',
     tags: ['Python', 'Machine Learning', 'E-commerce'],
     aiHint: 'online shopping',
+    githubUrl: 'https://github.com/sujalupadhyay1',
   },
   {
     title: 'Social Media Sentiment Analysis',
@@ -37,6 +43,7 @@ const projects = [
     imageUrl: 'https://picsum.photos/600/400?random=5',
     tags: ['NLP', 'Python', 'Social Media'],
     aiHint: 'social media',
+    githubUrl: 'https://github.com/sujalupadhyay1',
   },
   {
     title: 'Supply Chain Optimization',
@@ -44,6 +51,7 @@ const projects = [
     imageUrl: 'https://picsum.photos/600/400?random=6',
     tags: ['SQL', 'Logistics', 'Optimization'],
     aiHint: 'supply chain',
+    githubUrl: 'https://github.com/sujalupadhyay1',
   },
   {
     title: 'Financial Fraud Detection',
@@ -51,6 +59,7 @@ const projects = [
     imageUrl: 'https://picsum.photos/600/400?random=7',
     tags: ['Machine Learning', 'Finance', 'Security'],
     aiHint: 'financial chart',
+    githubUrl: 'https://github.com/sujalupadhyay1',
   },
   {
     title: 'A/B Testing Platform Analysis',
@@ -58,6 +67,7 @@ const projects = [
     imageUrl: 'https://picsum.photos/600/400?random=8',
     tags: ['Statistics', 'A/B Testing', 'Web Analytics'],
     aiHint: 'website analytics',
+    githubUrl: 'https://github.com/sujalupadhyay1',
   },
 ];
 
@@ -87,8 +97,15 @@ export default function ProjectsPage() {
             </CardHeader>
             <CardContent className="flex-grow flex flex-col">
                 <CardDescription className="flex-grow">{project.description}</CardDescription>
-                <div className="flex flex-wrap gap-2 pt-4">
+                <div className="flex flex-wrap items-center justify-between gap-2 pt-4">
+                  <div className="flex flex-wrap gap-2">
                     {project.tags.map(tag => <Badge key={tag} variant="secondary">{tag}</Badge>)}
+                  </div>
+                  {project.githubUrl && (
+                    <Link href={project.githubUrl} target="_blank" aria-label="GitHub repository for the project" className="text-muted-foreground hover:text-foreground transition-colors">
+                      <Github className="h-6 w-6" />
+                    </Link>
+                  )}
                 </div>
             </CardContent>
           </Card>
