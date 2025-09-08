@@ -9,6 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import { FeedbackForm } from '@/components/feedback-form';
 
 export default function Home() {
   return (
@@ -27,6 +28,8 @@ export default function Home() {
         <CarouselPrevious className="ml-12" />
         <CarouselNext className="mr-12" />
       </Carousel>
+      <Separator className="my-8 md:my-12" />
+      <FeedbackForm />
     </div>
   );
 }
