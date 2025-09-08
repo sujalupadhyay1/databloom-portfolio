@@ -32,7 +32,7 @@ const projects = [
   {
     title: "McDonald's Sales Dashboard",
     description: "McDonald's Sales Dashboard , Built an interactive Excel dashboard to track revenue, daily orders, and item-wise trends, providing insights into peak sales, customer preferences, and top-performing items for better decision-making.",
-    imageUrl: 'https://picsum.photos/600/400?random=4',
+    imageUrl: '/download.jpg',
     tags: ['Excel', 'Figma', 'Sales Analysis'],
     aiHint: 'online shopping',
     githubUrl: 'https://github.com/sujalupadhyay1/McDonald-s-Sales-Dashboard-Excel',
