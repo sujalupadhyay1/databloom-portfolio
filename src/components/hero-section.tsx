@@ -4,9 +4,17 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Linkedin, Github, Mail, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useState } from 'react';
 
 export function HeroSection() {
-  const imageSrc = 'https://picsum.photos/400/400';
+  const [imageSrc, setImageSrc] = useState('https://picsum.photos/400/400');
+
+  const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files && e.target.files[0]) {
+      const file = e.target.files[0];
+      setImageSrc(URL.createObjectURL(file));
+    }
+  };
 
   return (
     <section className="py-12 md:py-24 lg:py-32">
@@ -20,6 +28,18 @@ export function HeroSection() {
             className="rounded-full object-cover w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 border-4 border-primary shadow-lg"
             data-ai-hint="professional portrait"
           />
+          <div className="relative">
+            <Button asChild>
+              <label htmlFor="photo-upload">Change Photo</label>
+            </Button>
+            <input
+              id="photo-upload"
+              type="file"
+              accept="image/*"
+              onChange={handleImageChange}
+              className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+            />
+          </div>
         </div>
         <div className="space-y-4 text-center md:text-left">
           <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter">
