@@ -25,8 +25,8 @@ export default function Home() {
             <WorkExperienceSection />
           </CarouselItem>
         </CarouselContent>
-        <CarouselPrevious className="ml-12" />
-        <CarouselNext className="mr-12" />
+        <CarouselPrevious />
+        <CarouselNext />
       </Carousel>
       <Separator className="my-8 md:my-12" />
       <FeedbackForm />
