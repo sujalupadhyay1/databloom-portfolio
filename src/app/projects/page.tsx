@@ -30,7 +30,7 @@ const projects = [
     githubUrl: 'https://github.com/sujalupadhyay1/HR-Dashboard',
   },
   {
-    title: 'E-commerce Recommendation Engine',
+    title: "McDonald's Sales Dashboard",
     description: 'Engineered a collaborative filtering recommendation system that personalized user experience and boosted average order value by 12%.',
     imageUrl: 'https://picsum.photos/600/400?random=4',
     tags: ['Python', 'Machine Learning', 'E-commerce'],
