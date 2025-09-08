@@ -22,7 +22,7 @@ const projects = [
     githubUrl: 'https://github.com/sujalupadhyay1/ITC-Hotels-Customer-Sales-Analytics-Power-BI-SQL-',
   },
   {
-    title: 'Healthcare Readmission Dashboard',
+    title: 'HR Dashboard',
     description: 'Designed and built an interactive Tableau dashboard to monitor patient readmission rates, helping hospital administrators identify key drivers and implement preventative measures.',
     imageUrl: 'https://picsum.photos/600/400?random=3',
     tags: ['Tableau', 'Healthcare', 'Dashboard'],
