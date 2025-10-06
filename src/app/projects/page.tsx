@@ -7,7 +7,8 @@ import { Github } from 'lucide-react';
 const projects = [
   {
     title: 'Weather Data Analysis Dashboard',
-    description: 'Weather Report is a Power BI solution that connects to a live weather API, processes raw JSON data, and delivers an interactive dashboard for current conditions, hourly forecasts, and daily forecasts. The project showcases ETL with Power Query (M), data modeling, and DAX measures to produce actionable insights for multiple cities.',
+    description:
+      'Weather Report is a Power BI solution that connects to a live weather API, processes raw JSON data, and delivers an interactive dashboard for current conditions, hourly forecasts, and daily forecasts. The project showcases ETL with Power Query (M), data modeling, and DAX measures to produce actionable insights for multiple cities.',
     imageUrl: '/weather_dashborad.png',
     tags: ['Power BI', 'DAX', 'API'],
     aiHint: 'weather dashboard',
@@ -15,7 +16,8 @@ const projects = [
   },
   {
     title: 'ITC Hotels Customer Sales Analytics',
-    description: 'ITC made ₹2.0B in 3 months; Mumbai & Elite rooms drive revenue, occupancy ~43.5%, cancellations high (24.8%, ~₹299M lost) focus on premium upsells, targeted promos for weak markets and stricter cancellation/advance-pay rules.',
+    description:
+      'ITC made ₹2.0B in 3 months; Mumbai & Elite rooms drive revenue, occupancy ~43.5%, cancellations high (24.8%, ~₹299M lost) focus on premium upsells, targeted promos for weak markets and stricter cancellation/advance-pay rules.',
     imageUrl: '/ITC_HOTEL.png',
     tags: ['SQL', 'Power BI', 'Figma'],
     aiHint: 'customer segments',
@@ -23,7 +25,8 @@ const projects = [
   },
   {
     title: 'HR Dashboard',
-    description: 'An interactive dashboard providing insights into workforce trends, demographics, and salary analysis. It highlights hiring vs terminations over time, workforce distribution by department.',
+    description:
+      'An interactive dashboard providing insights into workforce trends, demographics, and salary analysis. It highlights hiring vs terminations over time, workforce distribution by department.',
     imageUrl: '/Dashborad.png',
     tags: ['Tableau', 'Draw.io'],
     aiHint: 'HR dashboard',
@@ -31,7 +34,8 @@ const projects = [
   },
   {
     title: "McDonald's Sales Dashboard",
-    description: "McDonald's Sales Dashboard , Built an interactive Excel dashboard to track revenue, daily orders, and item-wise trends, providing insights into peak sales, customer preferences, and top-performing items for better decision-making.",
+    description:
+      "McDonald's Sales Dashboard , Built an interactive Excel dashboard to track revenue, daily orders, and item-wise trends, providing insights into peak sales, customer preferences, and top-performing items for better decision-making.",
     imageUrl: '/download.jpg',
     tags: ['Excel', 'Figma', 'Sales Analysis'],
     aiHint: 'online shopping',
@@ -39,7 +43,8 @@ const projects = [
   },
   {
     title: 'SQL SALES ANALYTICS EDA',
-    description: 'Performed sentiment analysis on Twitter data to gauge public opinion on a new product launch, providing actionable feedback to the marketing team.',
+    description:
+      'Performed sentiment analysis on Twitter data to gauge public opinion on a new product launch, providing actionable feedback to the marketing team.',
     imageUrl: '/EDA.png',
     tags: ['SQL', 'Sales Analysis'],
     aiHint: 'social media',
@@ -53,6 +58,39 @@ const projects = [
     aiHint: 'movie poster',
     githubUrl: 'https://github.com/sujalupadhyay1/IMDB-Movie-Analysis',
   },
+
+  // New project 1
+  {
+    title: 'GoIbibo Indian Hotels Analytics',
+    description:
+      'Analyzed a comprehensive hotel dataset to empower decision-making across revenue management, customer experience, and competitive positioning.',
+    imageUrl: '/g.png',
+    tags: ['SQL', 'Python', ' Logistic Regression','K-Means','Figma','Power Bi'],
+    aiHint: 'online shopping',
+    githubUrl: 'https://github.com/sujalupadhyay1/Goibibo-sql-powerBI--python',
+  },
+
+  // New project 2
+  {
+    title: 'Loan Approval Prediction',
+    description:
+      'Machine Learning model to automatically predict whether a loan application will be approved or rejected based on an applicant’s demographic, financial, and credit-related factors.',
+    imageUrl: '/bank.png',
+    tags: ['Python', 'Machine learning','scikit-learn','EDA'],
+    aiHint: 'Banking',
+    githubUrl: 'https://github.com/sujalupadhyay1/Loan-Approval-Prediction-python',
+  },
+
+  // New project 3
+  {
+    title: ' flower aura Reviews',
+    description:
+      'The project extracts insights from real customer feedback and provides business recommendations to improve quality, delivery, and customer satisfaction.',
+    imageUrl: '/flower.png',
+    tags: ['Python', 'BeautifulSoup','Textblob'],
+    aiHint: 'onilne shopping',
+    githubUrl: 'https://github.com/sujalupadhyay1/Sentiment_Analysis',
+  },
 ];
 
 export default function ProjectsPage() {
@@ -61,12 +99,16 @@ export default function ProjectsPage() {
       <div className="space-y-4 text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-headline font-bold">My Work</h1>
         <p className="text-muted-foreground md:text-lg">
-          A collection of projects where I've applied my data analysis skills to solve real-world problems.
+          A collection of projects where I&apos;ve applied my data analysis skills to solve real-world problems.
         </p>
       </div>
+
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {projects.map((project, index) => (
-          <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col">
+          <Card
+            key={index}
+            className="overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col"
+          >
             <CardHeader>
               <div className="aspect-video relative">
                 <Image
@@ -79,18 +121,30 @@ export default function ProjectsPage() {
               </div>
               <CardTitle className="font-headline pt-4">{project.title}</CardTitle>
             </CardHeader>
+
             <CardContent className="flex-grow flex flex-col">
-                <CardDescription className="flex-grow">{project.description}</CardDescription>
-                <div className="flex flex-wrap items-center justify-between gap-2 pt-4">
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map(tag => <Badge key={tag} variant="secondary">{tag}</Badge>)}
-                  </div>
-                  {project.githubUrl && (
-                    <Link href={project.githubUrl} target="_blank" aria-label="GitHub repository for the project" className="text-muted-foreground hover:text-foreground transition-colors">
-                      <Github className="h-6 w-6" />
-                    </Link>
-                  )}
+              <CardDescription className="flex-grow">{project.description}</CardDescription>
+
+              <div className="flex flex-wrap items-center justify-between gap-2 pt-4">
+                <div className="flex flex-wrap gap-2">
+                  {project.tags.map((tag) => (
+                    <Badge key={tag} variant="secondary">
+                      {tag}
+                    </Badge>
+                  ))}
                 </div>
+
+                {project.githubUrl && (
+                  <Link
+                    href={project.githubUrl}
+                    target="_blank"
+                    aria-label="GitHub repository for the project"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    <Github className="h-6 w-6" />
+                  </Link>
+                )}
+              </div>
             </CardContent>
           </Card>
         ))}
