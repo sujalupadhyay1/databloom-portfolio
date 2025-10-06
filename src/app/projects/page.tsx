@@ -75,7 +75,7 @@ const projects = [
     title: 'Loan Approval Prediction',
     description:
       'Machine Learning model to automatically predict whether a loan application will be approved or rejected based on an applicant’s demographic, financial, and credit-related factors.',
-    imageUrl: '/bank.png',
+    imageUrl: '/bank.jpg',
     tags: ['Python', 'Machine learning','scikit-learn','EDA'],
     aiHint: 'Banking',
     githubUrl: 'https://github.com/sujalupadhyay1/Loan-Approval-Prediction-python',
