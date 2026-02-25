@@ -1,36 +1,77 @@
+import type { ReactNode } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Database, LineChart, Code, BrainCircuit, BarChart, Presentation } from 'lucide-react';
+import { UserSquare2, BarChart2, Code2, Database, Settings2 } from 'lucide-react';
 
-const skills = [
+type SkillCategory = {
+  title: string;
+  items: string[];
+  icon: ReactNode;
+};
+
+const skillCategories: SkillCategory[] = [
   {
-    icon: <Database className="h-10 w-10 text-primary" />,
-    title: 'SQL & Databases',
-    description: 'Proficient in SQL for data extraction, manipulation, and analysis from relational databases.',
+    title: 'Business Analysis & Stakeholder Management',
+    icon: <UserSquare2 className="h-7 w-7" />,
+    items: [
+      'Requirement Elicitation',
+      'BRD, FRD, FSD Documentation',
+      'Agile & Scrum Methodology',
+      'User Stories',
+      'Stakeholder Management',
+      'Business Process Mapping (As-Is & To-Be)',
+      'Gap & Impact Analysis',
+      'Project Estimation & Scope Definition',
+      'Sprint Planning & Coordination',
+      'Requirement Traceability Matrix (RTM)',
+      'Change Request Management',
+      'Risk Analysis & Mitigation',
+      'UAT Coordination',
+      'SDLC Understanding',
+      'Cross-functional Team Collaboration',
+    ],
   },
   {
-    icon: <LineChart className="h-10 w-10 text-primary" />,
-    title: 'Python & R',
-    description: 'Using libraries like Pandas, NumPy, and dplyr for data cleaning, transformation, and analysis.',
+    title: 'Business & Data Analytics',
+    icon: <BarChart2 className="h-7 w-7" />,
+    items: [
+      'KPI Definition & Performance Tracking',
+      'Management Dashboards',
+      'Automated Reporting',
+      'Data Visualization & Storytelling',
+    ],
   },
   {
-    icon: <BarChart className="h-10 w-10 text-primary" />,
-    title: 'Data Visualization',
-    description: 'Creating insightful charts and dashboards with tools like Tableau, Power BI, and Matplotlib.',
+    title: 'Programming & Data Analysis',
+    icon: <Code2 className="h-7 w-7" />,
+    items: [
+      'Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn)',
+      'Exploratory Data Analysis (EDA)',
+      'Regression, Classification & Clustering',
+      'Model Evaluation (Accuracy, Precision, Recall, Confusion Matrix)',
+    ],
   },
   {
-    icon: <BrainCircuit className="h-10 w-10 text-primary" />,
-    title: 'Statistical Analysis',
-    description: 'Applying statistical methods and hypothesis testing to derive meaningful conclusions.',
+    title: 'Data & Tools',
+    icon: <Database className="h-7 w-7" />,
+    items: [
+      'SQL (Joins, Subqueries, CTEs, Views, Data Cleaning & Optimization)',
+      'Power BI (DAX, Power Query, Data Modeling)',
+      'Tableau',
+      'Microsoft Excel (Pivot Tables, Macros, Advanced Lookups, Power Query)',
+      'API Integration',
+    ],
   },
   {
-    icon: <Code className="h-10 w-10 text-primary" />,
-    title: 'Machine Learning',
-    description: 'Familiarity with ML concepts and libraries like Scikit-learn for predictive modeling.',
-  },
-  {
-    icon: <Presentation className="h-10 w-10 text-primary" />,
-    title: 'Business Acumen',
-    description: 'Translating data-driven insights into actionable business recommendations and strategies.',
+    title: 'Tools & Platforms',
+    icon: <Settings2 className="h-7 w-7" />,
+    items: [
+      'JIRA',
+      'GitHub',
+      'Jupyter Notebook',
+      'Google Sheets',
+      'MySQL',
+      'n8n (Workflow Automation)',
+    ],
   },
 ];
 
@@ -38,18 +79,29 @@ export function SkillsSection() {
   return (
     <section id="skills" className="py-8 md:py-16">
       <div className="space-y-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-headline font-bold">Skills Showcase</h2>
-        <p className="text-muted-foreground md:text-lg">A glimpse into my technical and analytical capabilities.</p>
+        <h2 className="text-3xl md:text-4xl font-headline font-bold">Technologies &amp; Skills</h2>
+        <p className="text-muted-foreground md:text-lg max-w-3xl mx-auto">
+          A comprehensive overview of my technical expertise in business analysis, data analytics, and programming.
+        </p>
       </div>
-      <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        {skills.map((skill) => (
-          <Card key={skill.title} className="text-center hover:shadow-xl transition-shadow duration-300">
-            <CardHeader className="items-center">
-              {skill.icon}
-              <CardTitle className="font-headline mt-4">{skill.title}</CardTitle>
+      <div className="mt-12 grid gap-6 md:gap-8 md:grid-cols-2">
+        {skillCategories.map((category) => (
+          <Card
+            key={category.title}
+            className="group h-full border border-border/60 bg-card/80 backdrop-blur-sm transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:border-primary/40"
+          >
+            <CardHeader className="flex flex-row items-start gap-3">
+              <div className="mt-1 flex h-11 w-11 items-center justify-center rounded-full bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
+                {category.icon}
+              </div>
+              <CardTitle className="font-headline text-lg md:text-xl">
+                {category.title}
+              </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground">{skill.description}</p>
+              <p className="text-sm md:text-base leading-relaxed text-muted-foreground">
+                {category.items.join(', ')}.
+              </p>
             </CardContent>
           </Card>
         ))}

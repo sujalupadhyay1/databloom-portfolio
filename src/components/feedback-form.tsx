@@ -15,7 +15,6 @@ import {
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
-import { sendFeedback } from '@/ai/flows/send-feedback-flow';
 import { useState } from 'react';
 import { Loader2 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
@@ -50,7 +49,25 @@ export function FeedbackForm() {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
     try {
-      const response = await sendFeedback(values);
+      const response = await fetch('/api/send-feedback', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      });
+
+      if (!response.ok) {
+        let detail = `HTTP ${response.status}`;
+        try {
+          const data = (await response.json()) as { detail?: string; error?: string };
+          detail = data.detail || data.error || detail;
+        } catch {
+          // ignore JSON parse errors
+        }
+        throw new Error(detail);
+      }
+
       toast({
         title: 'Feedback Sent',
         description: 'Thank you for your feedback!',
@@ -59,7 +76,10 @@ export function FeedbackForm() {
     } catch (error) {
       toast({
         title: 'Error',
-        description: 'There was an error sending your feedback. Please try again.',
+        description:
+          error instanceof Error
+            ? `Could not send feedback: ${error.message}`
+            : 'There was an error sending your feedback. Please try again.',
         variant: 'destructive',
       });
     } finally {
